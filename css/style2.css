@@ -1,0 +1,1637 @@
+/* ------------------- */
+/* ----- IMPORTS ----- */
+/* ------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* ------------------ */
+/* ----- BASICS ----- */
+/* ------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  z-index: -2;
+}
+
+
+/* ----------------- */
+/* -----BUTTONS----- */
+/* ----------------- */
+
+.button-style1 {
+  background: none;
+  border: black 2px solid;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem;
+  width: 25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(0);
+  border-radius: 25rem;
+}
+
+.button-style1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  color: #ffffff;
+  z-index: -1;
+  transition: all 0.5s;
+  border-radius: 25rem;
+}
+
+.button-style1:hover span a {
+  color: #ffffff;
+  transition-delay: 100ms;
+}
+
+.button-style1:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.button-style1 span a {
+  color: black;
+}
+
+
+
+
+/* ---------------------- */
+/* ----- TOP HEADER ----- */
+/* ---------------------- */
+
+.top-header {
+  background-color: rgb(255, 255, 255);
+
+  text-align: center;
+  font-size: 1.5rem;
+
+  padding: 0.5rem;
+}
+
+/* --------------------- */
+/* ----- NAVIGATIE ----- */
+/* --------------------- */
+nav {
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0 2em;
+  align-items: center;
+  height: 5em;
+  padding: 4rem 5em;
+}
+
+nav .logo {
+  width: 5rem;
+}
+
+.item1 > a,
+.item2 > a,
+.item3 > a,
+.hidden:hover {
+  padding-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.item1:hover > a,
+.item2:hover > a,
+.item3:hover > a {
+  border-bottom: 4px black solid;
+}
+
+nav > ul > li {
+  padding: 2rem;
+  vertical-align: middle;
+}
+
+nav > ul li:nth-child(1) {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+nav > ul > li a {
+  color: white;
+  font-size: 2rem;
+}
+
+nav ul li a:hover {
+  font-weight: 500;
+}
+
+.faq {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.faq li {
+  width: 6rem;
+}
+
+.faq li:nth-child(1) {
+  margin-right: -2rem;
+}
+
+.faq li a {
+  font-weight: 400;
+}
+
+nav ul li section {
+  background-color: rgb(255, 255, 255);
+  height: 50rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 1.5em;
+  z-index: -1;
+  flex-direction: row;
+}
+
+.search-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  color: white;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.opengeklapt .search-placeholder {
+  color: black;
+}
+
+.opengeklapt .search-bar::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.search-main ul {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.search-container {
+  width: 20rem;
+  position: relative;
+  top: 1rem;
+  margin-right: 5rem;
+}
+
+.search-container input {
+  color: white;
+}
+
+.search-container input::placeholder {
+  color: white;
+} 
+
+nav.opengeklapt .search-container input#search-bar {
+  border-color: black;
+}
+
+
+input#search-bar {
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+  border: 2px solid white;
+  background: none;
+  border-radius: 20rem;
+}
+
+.search-icon {
+  position: relative;
+  float: right;
+  width: 2.4rem;
+  top: -3.7rem;
+  right: 2rem;
+}
+
+.cart button {
+  background: none;
+  border: none;
+}
+
+.cart img {
+  width: 2.5rem;
+}
+
+/* ----------------------------------- */
+/* ----- MEGA MENU - OPENKLAPPEN ----- */
+/* ----------------------------------- */
+.hidden {
+  display: none;
+}
+
+.show {
+  display: flex;
+  z-index: 99;
+  border-top: lightslategray 1px solid;
+}
+
+nav.opengeklapt {
+  background-color: white !important;
+}
+
+nav.opengeklapt ul li a {
+  color: black;
+}
+
+/* --------------------------- */
+/* ----- MEGA MENU STIJL ----- */
+/* --------------------------- */
+nav ul li section > ul {
+  padding: 2em 0 0 5em;
+}
+
+.item1 div:nth-child(2) {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.765),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../img/bmw-menu.webp");
+}
+
+.item2 div:nth-child(2) {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.765),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../img/bmw-menu.webp");
+}
+
+.item3 div:nth-child(2) {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.765),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../img/bmw-menu.webp");
+}
+
+/* Blok met linkjes */
+nav ul li section > ul > li {
+  padding-bottom: 1rem;
+}
+
+nav ul li section ul ul {
+  display: flex;
+  gap: 0 3em;
+  padding-top: 1em;
+  position: absolute;
+  left: 0;
+  bottom: 0em;
+  right: 0;
+  padding: 1em 5em;
+  border-top: 3px solid lightgray;
+}
+
+nav ul li section > ul,
+nav ul li section > div {
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+}
+
+nav ul li section > div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+nav ul li section div div {
+  font-size: 2rem;
+  width: 200px;
+  position: absolute;
+  bottom: 3em;
+  left: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 0;
+  color: white;
+}
+
+nav ul li section div div h3 {
+  font-size: 3rem;
+}
+
+nav ul li section div div p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+
+/* ---------------- */
+/* ----- MAIN ----- */
+/* ---------------- */
+
+/* Blok 1 */
+
+.popup {
+  position: fixed;
+  width: 20rem;
+  height: 5rem;
+  right: -20rem;
+  top: 50rem;
+  transition: right 0.3s ease;
+  z-index: 99;
+}
+
+.popup.visible {
+  right: 0;
+}
+
+.popup2 {
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.popup2 > div img {
+  width: 2rem;
+}
+
+.popup2 div:nth-child(1) button {
+  transform: rotate(90deg);
+  height: 4rem;
+  width: 20rem;
+  right: 12rem;
+  position: absolute;
+  display: flex;
+  background: #1C69D4;
+  border: none;
+  font-size: 2rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset -9px 0px 17px 0px rgba(0,0,0,0.26);
+  color: #ffffff;
+}
+
+.popup2 div:nth-child(1) button img {
+  transform: rotate(90deg);
+  width: 2.5rem;
+  margin-left: 1rem;
+}
+
+.popup2 div:nth-child(2) {
+  background: rgb(255, 213, 88);
+  position: absolute;
+  height: auto;
+  width: 100%;
+  top: -13.8rem;
+  padding: 1rem;
+  box-shadow: 10px -1px 36px -12px rgba(77,77,77,0.68);;
+}
+
+.popup2 div:nth-child(2) > p {
+  margin-bottom: 1rem;
+  width: 110%;
+}
+
+.popup2 div:nth-child(2) div {
+  display: flex;
+  align-items: center;
+}
+
+.popup2 div:nth-child(2) img {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+
+
+
+
+main .uitgelicht {
+  background-image: url("../img/bmw-menu-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+  z-index: -5;
+  margin-top: -8rem;
+}
+
+main .uitgelicht section {
+  position: relative;
+  top: 45rem;
+  left: 20rem;
+  color: #ffffff;
+}
+
+main .uitgelicht h1 {
+  font-size: 5rem;
+}
+
+main .uitgelicht p {
+  width: 20%;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.button-style2 {
+  background: white;
+  border: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem;
+  width: 30rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(0);
+  border-radius: 4rem;
+}
+
+.button-style2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  color: #ffffff;
+  z-index: -1;
+  transition: all 0.5s;
+  border-radius: 1.7rem;
+}
+
+.button-style2:hover span a {
+  color: #ffffff;
+  transition-delay: 100ms;
+}
+
+.button-style2:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.button-style2 span a {
+  color: black;
+}
+
+/* BUTTON ANIMATION MENU */
+
+.menu-button {
+  background: #ffffff;
+  border: none;
+  display: inline-block;
+  font-weight: 600;
+  padding: 1rem;
+  width: 25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(0);
+  border-radius: 20rem;
+}
+
+.menu-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  color: #ffffff;
+  z-index: -1;
+  transition: all 0.5s;
+  border-radius: 1.5rem;
+}
+
+.menu-button:hover span a {
+  color: #ffffff;
+  transition-delay: 100ms;
+  font-weight: 600;
+}
+
+.menu-button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.menu-button span a {
+  color: black;
+  font-size: 1.5rem;
+}
+
+/* ------- UITKLAPPEN --------- */
+
+.uitklap-menu {
+  display: none;
+}
+
+.test1:hover > .uitklap-menu,
+.uitklap-menu:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu .uitklap-menu {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  opacity: 0;
+  visibility: hidden;
+  padding-top: 10rem;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  height: 60rem;
+}
+
+/* ---------- MAIN ----------- */
+
+.bmw-info {
+  width: 100%;
+  display: flex;
+  padding: 10rem 0 5rem 0;
+  gap: 6rem;
+  align-items: center;
+  padding: 10rem 25rem 5rem 25rem;
+}
+
+.bmw-info section {
+  width: 100%;
+}
+
+.bmw-info section img {
+  width: 100%;
+}
+
+.bmw-info section p:nth-child(1) {
+  font-size: 1.5rem;
+  color: rgb(112, 112, 112);
+}
+
+.bmw-info section h2 {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  margin-left: -0.5rem;
+}
+
+.bmw-info section p:nth-child(3) {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+
+
+/* ------------ UITGELICHT BMW -------------- */
+
+.uitgelicht-bmw {
+  min-width: 100%;
+  padding-bottom: 5rem;
+  padding: 0 25rem 0 25rem;
+}
+
+.uitgelicht-bmw section .bmw-autos {
+  display: flex;
+}
+
+.uitgelicht-bmw section .bmw-autos li {
+  width: 25%;
+}
+
+.uitgelicht-bmw section .bmw-autos li img:nth-child(1) {
+  width: 100%;
+  margin-bottom: -5rem;
+}
+
+.uitgelicht-bmw section .bmw-autos li:hover > img:nth-child(1) {
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+
+.uitgelicht-bmw section .bmw-autos li img:nth-child(2) {
+  width: 5rem;
+}
+
+.uitgelicht-bmw section .bmw-autos li h3 {
+  font-size: 2rem;
+}
+
+.uitgelicht-bmw section .bmw-autos li h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.uitgelicht-bmw section .bmw-autos li p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+/* AUTO INFO */
+
+.auto-info-bmw {
+  margin-top: 12rem;
+  justify-content: center;
+  position: relative;
+}
+
+.auto-info {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  animation-name: bmw;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.auto-info li {
+  background: #f2f2f2;
+  height: 24rem;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.auto-info li:nth-child(3),
+.auto-info li:nth-child(4) {
+  justify-content: end;
+  align-items: center;
+}
+
+.auto-info li img {
+  width: 5rem;
+}
+
+.auto-info li h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.auto-info li h4 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.auto-info li p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.auto-info li button {
+  width: 100%;
+}
+
+.auto-info li svg {
+  margin-bottom: 1rem;
+}
+
+.bmw3 {
+  position: absolute;
+  top: -80%;
+  left: 27.5%;
+  animation-name: bmw;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+@keyframes bmw {
+  from {
+    transform: translateY(-10%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.auto-info-bmw .show {
+  display: flex;
+}
+
+
+/* --------MERKEN--------- */
+
+.merken {
+  margin-top: 15rem;
+  padding: 0 25rem 0 25rem;
+  height: 100vh;
+}
+
+.merken p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.merken button {
+  margin-top: 2rem;
+}
+
+.merken h2:nth-child(2) {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.merken section ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.merken section ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  justify-content: flex-end;
+  margin-bottom: 8rem;
+}
+
+.merken section ul li img {
+  width: 15rem;
+}
+
+.merken section ul li:nth-child(4) img {
+  width: 12rem;
+  margin-bottom: -0.5rem;
+}
+
+.merken section ul li h2 {
+  font-size: 10rem;
+  margin-bottom: -3.2rem;
+}
+
+.merken section ul li h3 {
+  font-size: 2rem;
+  padding-top: 10%;
+}
+
+.merken section ul li p {
+  font-size: 1.5rem;
+  width: 60%;
+}
+
+
+/* -----UITGELICHTE PRODUCT--------- */
+
+.uitgelicht-product {
+  display: flex;
+  width: 100%;
+  padding: 15rem 25rem;
+  align-items: center;
+  position: relative;
+}
+
+.uitgelicht-product section {
+  width: 50%;
+}
+
+.uitgelicht-product section:nth-child(2) img {
+  width: 6rem;
+}
+
+.uitgelicht-product section h2 {
+  font-size: 5rem;
+}
+
+.uitgelicht-product section p {
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 0.5rem 0 2rem 0;
+}
+
+.uitgelicht-product section:nth-child(3) img {
+  width: 100%;
+}
+
+
+.back-img:nth-child(1) {
+  position: absolute;
+  left: -35rem;
+  top: -5rem;
+  z-index: -1;
+  height: 80rem;
+  opacity: 3%;
+}
+
+
+/* REVIEWS */
+
+
+
+.arrows {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.arrow {
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.608);
+  height: 6rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: 2.3rem;
+  padding-left: 0.5rem;
+  justify-content: center;
+  font-size: 10rem;
+  position: relative;
+  color: #1C69D4;
+}
+
+.arrow-left {
+  border-radius: 50% 0 0 50%;
+  position: relative;
+  left: 6rem;
+  top: -30rem;
+}
+
+.arrow-right {
+  border-radius: 0 50% 50% 0;
+  position: relative;
+  right	: 6rem;
+  top: -30rem;
+
+}
+
+
+
+.reviews-container {
+  position: relative;
+  max-width: 100vw;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.reviews {
+  display: flex;
+  padding: 10rem 25rem;
+  height: 50rem;
+  gap: 5rem;
+  justify-content: flex-start;
+  transition: transform 0.5s ease-in-out;
+}
+
+.reviews li {
+  width: 50rem;
+  flex-shrink: 0;
+}
+
+.reviews li img {
+  width: 45rem;
+  height: 20rem;
+  object-fit: cover;
+  position: absolute;
+}
+
+.reviews li h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.reviews li h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  border-top: lightgray 1px solid;
+}
+
+.reviews li div p:nth-child(4) {
+  font-size: 1.2rem;
+  border: none;
+}
+
+.text-review.hide {
+  display: none;
+}
+
+.date {
+  float: right;
+}
+
+.reviews li > div {
+  background: #ffffff;
+  box-shadow: 2px 2px rgb(0, 0, 0, 0.10);
+  position: relative;
+  width: 42rem;
+  top: 18rem;
+  right: -1.5rem;
+  padding: 1.5rem;
+  border-radius: 0rem 0rem 0rem 0rem;
+}
+
+.stars {
+  display: flex;
+  width: 100%;
+  fill: gold;
+  justify-content: flex-end;
+}
+
+.stars span {
+  font-size: 2rem;
+}
+
+
+
+.reviews li:nth-child(1) .stars span:nth-child(-n+3) {
+  font-variation-settings:
+  'FILL' 1
+}
+
+.reviews li:nth-child(2) .stars span:nth-child(-n+4) {
+  font-variation-settings:
+  'FILL' 1
+}
+
+.reviews li:nth-child(3) .stars span:nth-child(-n+2) {
+  font-variation-settings:
+  'FILL' 1
+}
+
+.reviews li:nth-child(4) .stars span:nth-child(-n+5) {
+  font-variation-settings:
+  'FILL' 1
+}
+
+.reviews li:nth-child(5) .stars span:nth-child(-n+1) {
+  font-variation-settings:
+  'FILL' 1
+}
+
+.reviews li:nth-child(6) .stars span:nth-child(-n+4) {
+  font-variation-settings:
+  'FILL' 1
+}
+
+.reviews li:nth-child(7) .stars span:nth-child(-n+2) {
+  font-variation-settings:
+  'FILL' 1
+}
+
+.reviews li:nth-child(8) .stars span:nth-child(-n+3) {
+  font-variation-settings:
+  'FILL' 1
+}
+
+.material-symbols-outlined {
+  color: rgb(227, 193, 1);
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48,
+}
+
+.reviews li .text-review {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in;
+}
+
+.reviews li.active .text-review {
+  max-height: 100rem;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  height: 40rem;
+  justify-content: space-between;
+  padding: 5rem 25rem;
+  background: #1C69D4;
+}
+
+footer .programmeur {
+
+}
+
+footer .programmeur h3 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+footer .programmeur > p {
+  font-size: 1.5rem;
+  width: 60%;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+footer .social {
+  display: flex;
+}
+
+footer .social li {
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem;
+}
+
+footer .social li a {
+  display: flex;
+  align-items: center;
+}
+
+footer .social li a p {
+  display: none;
+  margin-left: 0.5rem;
+  color: #f2f2f2;
+  font-size: 1.2rem;
+}
+
+footer .social li:hover {
+  background: rgba(211, 211, 211, 0.544);
+  width: 10rem;
+}
+
+footer .social li:hover p {
+  display: flex;
+}
+
+footer .social img {
+  width: 2.5rem;
+}
+
+.nav-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-footer ul li {
+  width: 18rem;
+}
+
+.nav-footer h4 {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.nav-footer p {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+/* ----------------- */
+/* ------BMWM2------ */
+/* ----------------- */
+
+.bmwM2 .uitgelicht {
+  background-image: url("/img/bmwM2-background.jpg");
+  position: relative;
+}
+
+.bmwM2 .uitgelicht h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  position: absolute;
+  top: -3.5rem;
+  left: 12.5rem;
+}
+
+.bmwM2 .uitgelicht div {
+  color: #ffffff;
+  display: flex;
+  position: absolute;
+  top: 48%;
+  left: 5rem;
+}
+
+.bmwM2 .uitgelicht div img {
+  width: 6rem;
+  margin-right: 2rem;
+  height: 2.5rem;
+}
+
+
+.bmwM2 .uitgelicht div p {
+  color: #ffffff;
+  font-size: 2.5rem;
+  width: 40rem;
+}
+
+.product-bmwm2 {
+  display: flex;
+  padding: 15rem 25rem;
+  gap: 5rem;
+}
+
+.product-bmwm2 section {
+  width: 100%;
+}
+
+.product-bmwm2 section img {
+  width: 100%;
+}
+
+
+.product-bmwm2 section h2 {
+  font-size: 3rem;
+}
+
+.product-bmwm2 section p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: inline;
+}
+
+.product-bmwm2 section ul{
+  list-style: inside;
+}
+
+.product-bmwm2 section ul li {
+  list-style: inside;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.product-bmwm2 section button {
+  background: none;
+  border: none;
+}
+
+.product-bmwm2 section button a {
+  color: black;
+}
+
+.product-bmwm2 section button:hover a {
+  color: white;
+  transition-delay: 0.2s;
+}
+
+
+
+.auto-details ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15rem;
+  padding: 0 25rem;
+}
+
+.auto-details ul li {
+  width: 33%;
+  text-align: center;
+}
+
+.auto-details ul li p {
+  font-size: 2rem;
+}
+
+.auto-details ul li h3 {
+  font-size: 6rem;
+}
+
+
+
+
+.kleur-auto section {
+  justify-content: center;
+  padding: 0 25rem;
+}
+
+.kleur-auto section > img {
+  width: 100%;
+}
+
+.kleurRood {
+  cursor: pointer;
+}
+
+.kleurZwart {
+  cursor: pointer;
+}
+
+.kleurGroen {
+  cursor: pointer;
+}
+
+.kleurRood, .kleurZwart, .kleurGroen, .kleurLichtWit, .kleurGeel, .kleurDonkerBlauw, .kleurLichtGrijs, .kleurDonkerRood, .kleurMiddenGrijs, .kleurHeelDonkerRood {
+  cursor: pointer;
+  border: none;
+  width: 6rem;
+  height: 6rem;
+}
+
+.kleurGeselecteerd {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 0.2rem;
+}
+
+#autoAfbeelding {
+  transition: transform 0.5s ease-in-out;
+}
+
+.kleurGeselecteerd #autoAfbeelding {
+  transform: scale(1.2);
+}
+
+.kleur-auto h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.kleur-auto section div {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* product2 */
+
+.product2-bmwm2 {
+  display: flex;
+  padding: 15rem 25rem;
+  gap: 5rem;
+  align-items: center;
+}
+
+.product2-bmwm2 section {
+  width: 50%;
+}
+
+.product2-bmwm2 section h2 {
+  font-size: 3rem
+}
+
+.product2-bmwm2 section p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.product2-bmwm2 section button {
+  background: none;
+  border: none;
+}
+
+.product2-bmwm2 section button a {
+  color: black;
+}
+
+.product2-bmwm2 section button:hover a {
+  transition-delay: 0.2s;
+  color: white;
+}
+
+
+.product2-bmwm2 section img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+/* BMW M2 RESPONSIVE */
+
+@media screen and (max-width: 800px) {
+
+
+
+  .bmwM2 .uitgelicht {
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.565),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/img/bmwM2-background.jpg");
+  }
+  
+  .bmwM2 .uitgelicht h1 {
+    top: -3.5rem;
+    left: 1.7rem;
+  }
+  
+  .bmwM2 .uitgelicht div {
+    color: #ffffff;
+    display: flex;
+    position: absolute;
+    top: 48%;
+    left: -4rem;
+  }
+  
+  .bmwM2 .uitgelicht div img {
+    width: 4rem;
+    margin: 0.5rem 1rem 0 0;
+    height: 1.5rem;
+  }
+  
+  
+  .bmwM2 .uitgelicht div p {
+    color: #ffffff;
+    font-size: 2rem;
+    width: 50%;
+  }
+
+
+
+
+
+
+  
+  .product-bmwm2 {
+    flex-wrap: wrap;
+    padding: 5rem 3rem;
+    gap: 5rem;
+  }
+
+
+
+  
+  .auto-details ul {
+    flex-wrap: wrap;
+    margin: 10rem 0;
+    padding: 0 ;
+    gap: 7rem;
+  }
+  
+  .auto-details ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+
+
+
+
+
+  .kleur-auto section {
+    justify-content: center;
+    padding: 0 3rem;
+  }
+  
+  .kleurGeselecteerd #autoAfbeelding {
+    transform: scale(1.2);
+  }
+  
+  .kleur-auto section div {
+    flex-wrap: wrap;
+  }
+  
+
+
+  .product2-bmwm2 {
+    flex-wrap: wrap;
+    padding: 5rem 3rem;
+    gap: 5rem;
+    align-items: center;
+  }
+  
+  .product2-bmwm2 section {
+    width: 100%;
+  }
+  
+
+}
+
+
+
+
+
+  @media screen and (max-width: 1500px) {
+
+   .bmw-info section h2 {
+    font-size: 3rem;
+   }
+
+  .bmw3 {
+    display: none;
+  }
+  
+  .uitgelicht-bmw section .bmw-autos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .uitgelicht-bmw section .bmw-autos li {
+    width: 50%;
+  }
+
+  .auto-info {
+    flex-wrap: wrap;
+  }
+
+  .auto-info li {
+    width: 32.7%;
+  }
+
+  .auto-info li h2 {
+    font-size: 2rem;
+  }
+}
+
+  
+@media screen and (max-width: 1200px) {
+  
+  nav {
+    display: none;
+  }
+
+  .bmw-info {
+    flex-wrap: wrap;
+  }
+
+  .merken {
+    margin-bottom: 8rem;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+  .uitgelicht-bmw section .bmw-autos li {
+    width: 100%;
+  }
+
+  
+}
+
+
+
+
+  @media screen and (max-width: 800px) {
+
+    main .uitgelicht h1 {
+      font-size: 2.5rem;
+    }
+
+    .button-style2 {
+      width: 20rem;
+    }
+    
+    
+    main .uitgelicht p {
+      width: 55%;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    main .uitgelicht section {
+      position: relative;
+      top: 45rem;
+      left: 6rem;
+      color: #ffffff;
+    }
+
+    .reviews {
+      gap: 0rem;
+    }
+
+    .merken {
+      padding: 0;
+    }
+
+    .uitgelicht-bmw {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .uitgelicht-bmw ul {
+      width: 60%;
+    }
+
+    
+    .bmw-info {
+      padding: 0;
+      margin-top: 10rem;
+    }
+
+
+
+
+
+
+
+    .popup {
+      display: none;
+    }
+
+    .bmw-info section {
+      padding: 0 6rem;
+      margin-top: -5rem;
+    }
+
+    .bmw-info section:nth-child(2) {
+      margin-bottom: 8rem;
+    }
+
+    .uitgelicht-bmw section {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .auto-info li {
+      width: 100%;
+    }
+
+    .auto-info li h2 {
+      font-size: 2.2rem;
+    }
+
+    .merken {
+      margin-bottom: 80rem;
+      flex-wrap: wrap;
+      margin-top: 20rem;
+    }
+
+    .merken section ul li {
+      width: 100%;
+    }
+
+    .uitgelicht-product {
+      padding: 5rem;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .uitgelicht-product section {
+      width: 100%;
+    }
+
+    footer {
+      max-width: 100%;
+      justify-content: center;
+      position: absolute;
+      height: 60vh;
+      gap: 5rem;
+    }
+
+    footer .social {
+      flex-wrap: wrap;
+    }
+
+    footer .social li {
+      width: 100%;
+    }
+  }
