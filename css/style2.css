@@ -85,6 +85,52 @@ main {
 
 
 
+.button-style2 {
+  background: none;
+  border: black 2px solid;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem;
+  width: 25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(0);
+  border-radius: 25rem;
+}
+
+.button-style2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  color: #ffffff;
+  z-index: -1;
+  transition: all 0.5s;
+  border-radius: 25rem;
+}
+
+.button-style2:hover span {
+  color: #ffffff;
+  transition-delay: 100ms;
+}
+
+.button-style2:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.button-style2 span a {
+  color: black;
+}
+
+
+
 
 /* ---------------------- */
 /* ----- TOP HEADER ----- */
@@ -97,6 +143,102 @@ main {
   font-size: 1.5rem;
 
   padding: 0.5rem;
+}
+
+
+
+/* SHOPPING CART */
+
+.hidden {
+  display: none;
+}
+
+.shoppingShekout{
+  padding: 2rem;
+  background: #fff;
+  background-clip: padding-box;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 5px #32323299;
+  min-height: calc(50vh - 5.2rem);
+  width: 30vw;
+  position: absolute;
+  overflow-y: auto;
+  text-align: left;
+  white-space: normal;
+  top: 6.6rem;
+  left: 70vw;
+  z-index: 2;
+}
+
+.shoppingShekout ul {
+ padding: 4rem 2rem;
+}
+
+.shoppingShekout ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: black 1px solid;
+  width: 44rem;
+}
+
+.shoppingShekout ul li div {
+  display: flex;
+  flex-direction: row;
+}
+
+.shoppingShekout ul li h4 {
+  font-size: 1.8rem;
+}
+
+.shoppingShekout ul li h5 {
+  font-size: 1.5rem;
+  min-width: 15rem;
+}
+
+.shoppingShekout ul li span {
+  color:  black;
+  position: absolute;
+  top: 7rem;
+  right: 0;
+}
+
+.shoppingShekout ul li img {
+  width: 15rem;
+}
+
+.shoppingShekout h2 {
+  font-size: 2rem;
+}
+
+.shoppingShekout div {
+  position: sticky;
+  left: 0.5rem;
+  top: 44rem;
+  width: fit-content;
+  padding: 1rem;
+}
+
+.shoppingShekout div h4 {
+  font-size: 2rem;
+}
+
+.add_to_cart {
+  border: black 2px solid !important;
+  width: 20rem;
+  position: sticky;
+  left: 28rem;
+  top: 41rem;
+  padding: 1rem;
+}
+
+.add_to_cart span a {
+  font-size: 1.5rem;
+}
+
+.add_to_cart:hover span a {
+  color: white;
+  font-weight: 600;
 }
 
 /* --------------------- */
@@ -294,7 +436,7 @@ nav ul li section > ul {
       rgba(0, 0, 0, 0.765),
       rgba(0, 0, 0, 0)
     ),
-    url("../img/bmw-menu.webp");
+    url("../img/bmw-ba1.webp");
 }
 
 .item2 div:nth-child(2) {
@@ -303,7 +445,7 @@ nav ul li section > ul {
       rgba(0, 0, 0, 0.765),
       rgba(0, 0, 0, 0)
     ),
-    url("../img/bmw-menu.webp");
+    url("../img/bmw-ba3.webp");
 }
 
 .item3 div:nth-child(2) {
@@ -312,7 +454,7 @@ nav ul li section > ul {
       rgba(0, 0, 0, 0.765),
       rgba(0, 0, 0, 0)
     ),
-    url("../img/bmw-menu.webp");
+    url("../img/bmw-ba2.webp");
 }
 
 /* Blok met linkjes */
@@ -365,6 +507,115 @@ nav ul li section div div p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
+
+
+
+/* ---------------------- */
+/* ----- MOBILE NAV ----- */
+/* ---------------------- */
+
+.mobile-nav {
+  display: none;
+
+  background-color: white;
+}
+
+.mobile-nav>ul {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 2rem 3rem;
+}
+
+.mobile-nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.mobile-nav ul ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0 2rem;
+  align-items: center
+}
+
+.mobile-nav ul img {
+  width: 2rem;
+}
+
+
+.mobile-nav .logo {
+  width: 4rem;
+}
+
+
+/* Zijkant */
+
+.mobile-zijkant {
+  background-color: white;
+  position: absolute;
+  left: 20%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  z-index: 999;
+  transform: translateX(100%);
+
+  padding: 5rem;
+
+  transition: 0.5s;
+}
+
+.mobile-zijkant ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem 0;
+}
+
+.mobile-zijkant ul li p {
+  font-size: 2.5rem;
+  display: inline;
+}
+
+.mobile-zijkant .hamburger-sluiten {
+  text-align: end;
+}
+
+.mobile-zijkant .hamburger-model {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+body.menuOpen main,
+body.menuOpen .mobile-nav {
+  filter: blur(5px);
+  transform: scaleX(1.03);
+  transition: 0.5s;
+}
+
+body.menuOpen .zijkant-openen-1 {
+  transform: translateY(0%);
+}
+
+body.modellenOpen .zijkant-openen-2 {
+  transform: translateY(0%);
+}
+
+body.elektrischOpen .zijkant-openen-3 {
+  transform: translateY(0%);
+}
+
+body.aanschafOpen .zijkant-openen-4 {
+  transform: translateY(0%);
+}
+
+.zijkant-modellen {
+  background-color: white;
+}
+
 
 
 /* ---------------- */
@@ -444,12 +695,40 @@ nav ul li section div div p {
   margin-right: 0.5rem;
 }
 
+/* WINKELWAGEN */
 
+#cart {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100%;
+  background-color: #f5f5f5;
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+}
+
+#cart.open {
+  right: 0;
+}
+
+/* Aanvullende stijlen voor de winkelwagenitems */
+#cart-items li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#cart-items img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
 
 
 
 main .uitgelicht {
-  background-image: url("../img/bmw-menu-2.jpg");
+  background-image: url("../img/bmw-menu-2.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -899,11 +1178,15 @@ main .uitgelicht p {
 .arrow-right {
   border-radius: 0 50% 50% 0;
   position: relative;
-  right	: 6rem;
+  right: 6rem;
   top: -30rem;
 
 }
 
+
+.review-pagina {
+  overflow: hidden;
+}
 
 
 .reviews-container {
@@ -959,7 +1242,7 @@ main .uitgelicht p {
   float: right;
 }
 
-.reviews li > div {
+.reviews li>div {
   background: #ffffff;
   box-shadow: 2px 2px rgb(0, 0, 0, 0.10);
   position: relative;
@@ -985,51 +1268,51 @@ main .uitgelicht p {
 
 .reviews li:nth-child(1) .stars span:nth-child(-n+3) {
   font-variation-settings:
-  'FILL' 1
+    'FILL'1
 }
 
 .reviews li:nth-child(2) .stars span:nth-child(-n+4) {
   font-variation-settings:
-  'FILL' 1
+    'FILL'1
 }
 
 .reviews li:nth-child(3) .stars span:nth-child(-n+2) {
   font-variation-settings:
-  'FILL' 1
+    'FILL'1
 }
 
 .reviews li:nth-child(4) .stars span:nth-child(-n+5) {
   font-variation-settings:
-  'FILL' 1
+    'FILL'1
 }
 
 .reviews li:nth-child(5) .stars span:nth-child(-n+1) {
   font-variation-settings:
-  'FILL' 1
+    'FILL'1
 }
 
 .reviews li:nth-child(6) .stars span:nth-child(-n+4) {
   font-variation-settings:
-  'FILL' 1
+    'FILL'1
 }
 
 .reviews li:nth-child(7) .stars span:nth-child(-n+2) {
   font-variation-settings:
-  'FILL' 1
+    'FILL'1
 }
 
 .reviews li:nth-child(8) .stars span:nth-child(-n+3) {
   font-variation-settings:
-  'FILL' 1
+    'FILL'1
 }
 
 .material-symbols-outlined {
   color: rgb(227, 193, 1);
   font-variation-settings:
-  'FILL' 0,
-  'wght' 600,
-  'GRAD' 0,
-  'opsz' 48,
+    'FILL'0,
+    'wght'600,
+    'GRAD'0,
+    'opsz'48,
 }
 
 .reviews li .text-review {
@@ -1046,14 +1329,13 @@ main .uitgelicht p {
 
 footer {
   display: flex;
-  height: 40rem;
   justify-content: space-between;
-  padding: 5rem 25rem;
+  padding: 5rem 25rem 20rem;
   background: #1C69D4;
 }
 
 footer .programmeur {
-
+  width: 30%;
 }
 
 footer .programmeur h3 {
@@ -1062,9 +1344,8 @@ footer .programmeur h3 {
   margin-bottom: 1rem;
 }
 
-footer .programmeur > p {
+footer .programmeur>p {
   font-size: 1.5rem;
-  width: 60%;
   margin-bottom: 2rem;
   color: #ffffff;
 }
@@ -1133,12 +1414,28 @@ footer .social img {
 
 
 
+
 /* ----------------- */
 /* ------BMWM2------ */
 /* ----------------- */
 
-.bmwM2 .uitgelicht {
-  background-image: url("/img/bmwM2-background.jpg");
+.bmwM2 .uitgelicht1 {
+  background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.565),
+        rgba(0, 0, 0, 0)
+      ),
+      url("../img/bmw-ba2.webp");
+  position: relative;
+}
+
+.bmwM3 .uitgelicht2 {
+  background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.565),
+        rgba(0, 0, 0, 0)
+      ),
+      url("../img/bmwM2-background2.webp");
   position: relative;
 }
 
@@ -1219,6 +1516,15 @@ footer .social img {
 .product-bmwm2 section button:hover a {
   color: white;
   transition-delay: 0.2s;
+}
+
+.colors1 img.active {
+  border: 2px solid rgb(0, 0, 0); /* Stel hier de gewenste stijl in voor de actieve kleur */
+  padding: 0.5rem;
+}
+
+.m2-koop {
+  border: black 2px solid !important;
 }
 
 
@@ -1348,109 +1654,151 @@ footer .social img {
 
 
 
+/* ---------FILTER-------- */
 
-/* BMW M2 RESPONSIVE */
-
-@media screen and (max-width: 800px) {
-
-
-
-  .bmwM2 .uitgelicht {
-    background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.565),
-      rgba(0, 0, 0, 0)
-    ),
-    url("/img/bmwM2-background.jpg");
-  }
-  
-  .bmwM2 .uitgelicht h1 {
-    top: -3.5rem;
-    left: 1.7rem;
-  }
-  
-  .bmwM2 .uitgelicht div {
-    color: #ffffff;
-    display: flex;
-    position: absolute;
-    top: 48%;
-    left: -4rem;
-  }
-  
-  .bmwM2 .uitgelicht div img {
-    width: 4rem;
-    margin: 0.5rem 1rem 0 0;
-    height: 1.5rem;
-  }
-  
-  
-  .bmwM2 .uitgelicht div p {
-    color: #ffffff;
-    font-size: 2rem;
-    width: 50%;
-  }
-
-
-
-
-
-
-  
-  .product-bmwm2 {
-    flex-wrap: wrap;
-    padding: 5rem 3rem;
-    gap: 5rem;
-  }
-
-
-
-  
-  .auto-details ul {
-    flex-wrap: wrap;
-    margin: 10rem 0;
-    padding: 0 ;
-    gap: 7rem;
-  }
-  
-  .auto-details ul li {
-    width: 100%;
-    text-align: center;
-  }
-
-
-
-
-
-
-  .kleur-auto section {
-    justify-content: center;
-    padding: 0 3rem;
-  }
-  
-  .kleurGeselecteerd #autoAfbeelding {
-    transform: scale(1.2);
-  }
-  
-  .kleur-auto section div {
-    flex-wrap: wrap;
-  }
-  
-
-
-  .product2-bmwm2 {
-    flex-wrap: wrap;
-    padding: 5rem 3rem;
-    gap: 5rem;
-    align-items: center;
-  }
-  
-  .product2-bmwm2 section {
-    width: 100%;
-  }
-  
+.filter nav {
+  background: rgb(199, 199, 199);
 
 }
 
+.knoppen {
+  padding: 8rem 15rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.knoppen div:nth-child(1) {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.knoppen div input{
+  padding: 1rem;
+  border-radius: 2rem;
+  position: relative;
+}
+
+.knoppen div input::placeholder{
+  color: black;
+  font-weight: 500;
+}
+
+
+.knoppen div:nth-child(2) button {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 16.5rem;
+  top: 16.5rem;
+}
+
+.knoppen div:nth-child(2) button img {
+  width: 2.2rem;
+}
+
+.filter-pr ul li {
+  width: 100%;
+}
+
+.filter-pr ul {
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  width: 10rem;
+  height: 5rem;
+  border: #1C69D4 2px solid;
+  color: #1C69D4;
+  font-weight: 600;
+}
+
+.filter-button:hover {
+  background: #1C69D4;
+  color: white;
+  transition: all 0.3s;
+}
+
+.filter-button:focus {
+  background: #1C69D4;
+  color: white;
+}
+
+.filter-pr {
+  flex-wrap: wrap;
+}
+
+.filter .filter-pr ul {
+  padding: 5rem;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+}
+
+.filter .filter-pr ul li {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background: #efefef;
+  padding: 2rem;
+}
+
+.filter .filter-pr ul li div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter .filter-pr ul li div:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.filter .filter-pr ul li div p {
+  font-size: 2rem;
+}
+
+.filter .filter-pr ul li h3 {
+  font-size: 2rem;
+}
+
+.filter .filter-pr ul li h4 {
+  font-size: 3rem;
+}
+
+.filter .filter-pr ul li button {
+  width: 50%;
+}
+
+.filter .filter-pr ul li button a{
+  color: black;
+}
+
+.filter .filter-pr ul li button:hover a{
+  color: #ffffff;
+  transition-delay: 0.3ms;
+}
+
+.filter .price-filter {
+  padding: 1rem;
+}
+
+.filter-button2 {
+  background: white;
+  border: none;
+}
+
+.weg {
+  display: none;
+}
+
+
+
+
+
+
+/* BMW M2 RESPONSIVE */
 
 
 
@@ -1489,10 +1837,7 @@ footer .social img {
 
   
 @media screen and (max-width: 1200px) {
-  
-  nav {
-    display: none;
-  }
+
 
   .bmw-info {
     flex-wrap: wrap;
@@ -1501,6 +1846,13 @@ footer .social img {
   .merken {
     margin-bottom: 8rem;
   }
+
+  .knoppen div:nth-child(2) button {
+    position: relative;
+    left: -4rem;
+    top: 0.9rem;
+  }
+
 
 }
 
@@ -1513,13 +1865,63 @@ footer .social img {
     width: 100%;
   }
 
-  
+  .knoppen {
+    padding: 2rem;
+    justify-content: center;
+    gap: 3rem;
+    flex-direction: column-reverse;
+  }
+
+  .knoppen div:nth-child(2) button {
+    position: relative;
+    left: -4rem;
+    top: 0.9rem;
+  }
+
+  .filter {
+    padding: 0rem;
+  }
+
+  .filter .filter-pr ul li {
+    width: 100%;
+  }
+
+  .filter .filters div{
+    right: 50%;
+  }
 }
 
 
 
 
   @media screen and (max-width: 800px) {
+    
+    nav {
+      display: none;
+    }
+
+    .shoppingShekout {
+      left: 30vw;
+      width: 70vw;
+      top: 11.5rem;
+    }
+
+    .top-header {
+      background: rgb(230, 230, 230);
+    }
+    
+    main {
+      overflow-x: hidden;
+    }
+
+    .mobile-nav {
+      display: block;
+    }
+  
+    main .uitgelicht {
+      margin-top: 0 !important;
+    }
+  
 
     main .uitgelicht h1 {
       font-size: 2.5rem;
@@ -1600,7 +2002,7 @@ footer .social img {
     }
 
     .merken {
-      margin-bottom: 80rem;
+      margin-bottom: 200rem;
       flex-wrap: wrap;
       margin-top: 20rem;
     }
@@ -1620,18 +2022,140 @@ footer .social img {
     }
 
     footer {
+      flex-direction: column;
       max-width: 100%;
       justify-content: center;
-      position: absolute;
-      height: 60vh;
+      height: fit-content;
       gap: 5rem;
+      padding: 5rem 5rem 10rem;
     }
-
+  
     footer .social {
-      flex-wrap: wrap;
+      margin-top: 5rem;
     }
-
+  
     footer .social li {
       width: 100%;
     }
+  
+    footer .programmeur {
+      width: 100%;
+    }
+  
+    .nav-footer {
+      gap: 5rem 0;
+    }
+    
+    .bmwM2 .uitgelicht h1 {
+      top: -3.5rem;
+      left: 1.7rem;
+    }
+    
+    .bmwM2 .uitgelicht div {
+      color: #ffffff;
+      display: flex;
+      position: absolute;
+      top: 48%;
+      left: -4rem;
+    }
+    
+    .bmwM2 .uitgelicht div img {
+      width: 4rem;
+      margin: 0.5rem 1rem 0 0;
+      height: 1.5rem;
+    }
+    
+    
+    .bmwM2 .uitgelicht div p {
+      color: #ffffff;
+      font-size: 2rem;
+      width: 50%;
+    }
+  
+  
+  
+  
+  
+  
+    
+    .product-bmwm2 {
+      flex-wrap: wrap;
+      padding: 5rem 3rem;
+      gap: 5rem;
+    }
+  
+  
+  
+    
+    .auto-details ul {
+      flex-wrap: wrap;
+      margin: 10rem 0;
+      padding: 0 ;
+      gap: 7rem;
+    }
+    
+    .auto-details ul li {
+      width: 100%;
+      text-align: center;
+    }
+  
+  
+  
+  
+  
+  
+    .kleur-auto section {
+      justify-content: center;
+      padding: 0 3rem;
+    }
+    
+    .kleurGeselecteerd #autoAfbeelding {
+      transform: scale(1.2);
+    }
+    
+    .kleur-auto section div {
+      flex-wrap: wrap;
+    }
+  
+    .product2-bmwm2 {
+      flex-wrap: wrap;
+      padding: 5rem 3rem;
+      gap: 5rem;
+      align-items: center;
+    }
+    
+    .product2-bmwm2 section {
+      width: 100%;
+    }
+
+
+
+    .knoppen {
+      padding: 2rem;
+      justify-content: center;
+      gap: 3rem;
+      flex-direction: column-reverse;
+    }
+
+    .knoppen div:nth-child(2) button {
+      position: relative;
+      left: -4rem;
+      top: 0.9rem;
+    }
+
+    .filter {
+      padding: 0rem;
+    }
+
+    .filter .filter-pr ul li {
+      width: 100%;
+    }
+
+    .filter .filters div{
+      right: 50%;
+    }
   }
+
+
+
+

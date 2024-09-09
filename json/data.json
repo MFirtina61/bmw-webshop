@@ -1,0 +1,156 @@
+{
+  "jsonData": [
+    {
+      "name": "Product List 1",
+      "products": [
+        {
+          "name": "BMW 6 Serie Coupé",
+          "price": 158960,
+          "image": "img/m1.webp",
+          "soort": "M-model",
+          "pk" : "190"
+        },
+        {
+          "name": " M3 Competition",
+          "price": 78165,
+          "image": "img/m2.webp",
+          "soort": "M-model",
+          "pk" : "450"
+        },
+        {
+          "name": "BMW M3 Drive",
+          "price": 68219,
+          "image": "img/m3.webp",
+          "soort": "M-model",
+          "pk" : "263"
+        },
+        {
+          "name": "BMW 4 Serie",
+          "price": 96345,
+          "image": "img/bmw4.webp",
+          "soort": "M-model",
+          "pk" : "220"
+        },
+        {
+          "name": "BMW 2 Coupé",
+          "price": 103870,
+          "image": "img/bmw3.webp",
+          "soort": "M-model",
+          "pk" : "315"
+        },
+        {
+          "name": "BMW  Serie Coupé",
+          "price": 168172,
+          "image": "img/m5.webp",
+          "soort": "M-model",
+          "pk" : "420"
+        },
+        {
+          "name": "BMW 2 Serie Coupé",
+          "price": 128065,
+          "image": "img/bmw1.webp",
+          "soort": "Coupe",
+          "pk" : "234"
+        },
+        {
+          "name": "BMW M235i Gran Coupé",
+          "price": 68425,
+          "image": "img/bmw2.webp",
+          "soort": "Coupe",
+          "pk" : "274"
+        },
+        {
+          "name": "BMW 2 Serie Coupé",
+          "price": 148115,
+          "image": "img/c1.webp",
+          "soort": "Coupe",
+          "pk" : "290"
+        },
+        {
+          "name": "BMW M240i Coupé",
+          "price": 88231,
+          "image": "img/c2.webp",
+          "soort": "Coupe",
+          "pk" : "323"
+        },
+        {
+          "name": "BMW 8 Serie Gran Coupé",
+          "price": 118395,
+          "image": "img/c3.webp",
+          "soort": "Coupe",
+          "pk" : "374"
+        },
+        {
+          "name": "BMW 4 Serie Coupé",
+          "price": 68986,
+          "image": "img/c4.webp",
+          "soort": "Coupe",
+          "pk" : "279"
+        },
+        {
+          "name": "BMW iX",
+          "price": 84998,
+          "image": "img/elektrisch1.webp",
+          "soort": "Electrisch",
+          "pk" : "386"
+        },
+        {
+          "name": "BMW iX M60",
+          "price": 137041,
+          "image": "img/elektrisch2.webp",
+          "soort": "Electrisch",
+          "pk" : "348"
+        },
+        {
+          "name": "BMW i7",
+          "price": 122463,
+          "image": "img/elektrisch3.webp",
+          "soort": "Electrisch",
+          "pk" : "285"
+        },
+        {
+          "name": "BMW i7 M70 xDrive",
+          "price": 189877,
+          "image": "img/elektrisch4.webp",
+          "soort": "Electrisch",
+          "pk" : "260"
+        },
+        {
+          "name": "BMW i5",
+          "price": 77572,
+          "image": "img/elektrisch5.webp",
+          "soort": "Electrisch",
+          "pk" : "230"
+        },
+        {
+          "name": "BMW i5 M60 xDrive",
+          "price": 108427,
+          "image": "img/elektrisch6.webp",
+          "soort": "Electrisch",
+          "pk" : "430"
+        },
+        {
+          "name": "BMW i4",
+          "price": 59362,
+          "image": "img/elektrisch7.webp",
+          "soort": "Electrisch",
+          "pk" : "250"
+        },
+        {
+          "name": "BMW i4 M50",
+          "price": 77875,
+          "image": "img/elektrisch8.webp",
+          "soort": "Electrisch",
+          "pk" : "290"
+        },
+        {
+          "name": "BMW iX1",
+          "price": 55127,
+          "image": "img/elektrisch9.webp",
+          "soort": "Electrisch",
+          "pk" : "420"
+        }
+      ]
+    }
+  ]
+}

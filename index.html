@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <script src="js/main2.js" defer></script>
+  </head>
+
+  <body>
+    <!-- SALE SECTIE -->
+    <section class="top-header">
+      <h3>Nieuwe auto's in assortiment</h3>
+    </section>
+
+    <!-- MAIN NAVIGATIE -->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html"><img class="logo" src="img/bmw-logo-wit.webp" alt="Logo van de bedrijf" /></a>
+        </li>
+        <li class="item1">
+          <a href="#">Modellen</a>
+          <section class="hidden mega-menu1">
+            <ul>
+              <li>Modellen</li>
+              <li><a href="filter.html">Alle modellen</a></li>
+              <li><a href="filter.html">X-model</a></li>
+              <li><a href="filter.html">M-model</a></li>
+              <li><a href="filter.html">PHEV</a></li>
+              <li><a href="filter.html">SUV</a></li>
+              <ul class="faq">
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Dealers</a></li>
+                <li><a href="#">Betalingen</a></li>
+              </ul>
+            </ul>
+            <div>
+              <div>
+                <h3>BMW M2 Coupé</h3>
+                <p>
+                  Met BMW M Performance Parts geeft u uw BMW 2 Serie Coupé M model een maximaal sportief karakter – of pas de BMW met Originele BMW Accessoires volledig aan op uw persoonlijke wensen.
+                </p>
+                <button class="menu-button"><span><a href="bmwM2.html">Bekijk meer</a></span></button>
+              </div>
+            </div>
+          </section>
+        </li>
+        <li class="item2">
+          <a href="#">Elektrisch</a>
+          <section class="hidden mega-menu2">
+            <ul>
+              <li>Elektrisch</li>
+              <li><a href="filter2.html">Alle Modellen</a></li>
+              <li><a href="filter2.html">Sedan</a></li>
+              <li><a href="filter2.html">Grand Coupe</a></li>
+              <li><a href="filter2.html">SUV</a></li>
+              <ul class="faq">
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Dealers</a></li>
+                <li><a href="#">Betalingen</a></li>
+              </ul>
+            </ul>
+            <div>
+              <div>
+                <h3>BMW M440i xDrive</h3>
+                <p>
+                  Overzicht, comfort en veiligheid op het hoogste niveau: talrijke innovatieve technologieën ondersteunen u tijdens de rit op verschillende manieren.
+                </p>
+                <button class="menu-button"><span><a href="bmwM3.html">Bekijk meer</a></span></button>
+              </div>
+            </div>
+          </section>
+        </li>
+        <li class="item3">
+          <a href="#">Aanschaf & Leasen</a>
+          <section class="hidden mega-menu3">
+            <ul>
+              <li>Aanschaf & Leasen</li>
+              <li><a href="filter.html">Leasen</a></li>
+              <li><a href="filter.html">Financiëren</a></li>
+              <li><a href="filter.html">BMW Services</a></li>
+              <li><a href="filter.html">Dealers</a></li>
+              <li><a href="filter.html">Direct beschikbare modellen</a></li>
+              <ul class="faq">
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Dealers</a></li>
+                <li><a href="#">Betalingen</a></li>
+              </ul>
+            </ul>
+            <div>
+              <div>
+                <h3>BMW M2 Coupé</h3>
+                <p>
+                  Met BMW M Performance Parts geeft u uw BMW 2 Serie Coupé M model een maximaal sportief karakter – of pas de BMW met Originele BMW Accessoires volledig aan op uw persoonlijke wensen.
+                </p>
+                <button class="menu-button"><span><a href="bmwM2.html">Bekijk meer</a></span></button>
+              </div>
+            </div>
+          </section>
+        </li>
+      </ul>
+      <ul>
+        <li class="search-main">
+          <form class="search-container">
+            <input type="text" id="search-bar" />
+            <span class="search-placeholder">Zoek</span>
+            <a href="#"><img class="search-icon" src="img/search-wit.webp" /></a>
+          </form>
+        </li>
+        <li class="cart">
+          <a href="#">
+            <img class="cart-img" src="img/cart-white.webp" alt="Winkelwagen">
+          </a>
+          
+          <section class="shoppingShekout hidden">
+            <h2>Winkelwagen</h2>
+            <ul></ul>
+            <div class="Totaalbedrag">
+              <h4>Totaalbedrag</h4>
+              <h4 class="totaalbedrag">€0,-</h4>
+            </div>
+            <button class="add_to_cart besttelenKnop button-style1"><span><a href="">Bestellen</a></span></button>
+          </section>
+          
+        </li>
+      </ul>
+    </nav>
+
+
+      <!-- Mobile nav -->
+  <section class="mobile-nav">
+    <ul>
+      <li>
+        <a href="index.html"><img class="logo" src="img/BMW_black.webp" alt="BMw logo in het zwart" /></a>
+      </li>
+      <ul>
+        <li class="cart">
+          <button id="showCartButton1">
+            <img class="cart-img" src="img/cart-black.webp" alt="winkelwagen icon" />
+          </button>
+        </li>
+        <li class="cart">
+          <a href="#" id="showCartButton2">
+            <img class="cart-img" src="img/cart-white.webp" alt="Winkelwagen">
+          </a>
+          <section id="shoppingShekout" class="shoppingShekout hidden">
+            <h2>Winkelwagen</h2>
+            <ul></ul>
+            <div class="Totaalbedrag">
+              <h4>Totaalbedrag</h4>
+              <h4 class="totaalbedrag">€0,-</h4>
+            </div>
+            <button id="closeCartButton" class="add_to_cart besttelenKnop button-style1"><span><a href="#">Bestellen</a></span></button>
+          </section>
+        </li>
+        <li class="hamburger-openen">
+          <img src="img/Hamburger.webp" />
+        </li>
+      </ul>
+    </ul>
+  </section>
+
+  <!-- Hamburger - uitgeklapt -->
+  <section class="mobile-zijkant zijkant-openen-1">
+    <ul>
+      <li class="hamburger-sluiten">
+        <p>X</p>
+      </li>
+      <li class="modellen-openen">
+        <p>Modellen</p>
+      </li>
+      <li class="elektrisch-openen">
+        <p>Elektrisch</p>
+      </li>
+      <li class="aanschaf-openen">
+        <p>Aanschaf & Leasen</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Modellen - uitgeklapt -->
+  <section class="mobile-zijkant zijkant-openen-2 zijkant-modellen">
+    <ul>
+      <li class="hamburger-model">
+        <p class="model-terug"><</p>
+        <p class="hamburger-sluiten-2">X</p>
+      </li>
+      <li>
+        <a href="filter.html"><p>Alle modellen</p></a>
+      </li>
+      <li>
+        <a href="filter.html"><p>X-modellen</p></a>
+      </li>
+      <li>
+        <a href="filter.html"><p>M-modellen</p></a>
+      </li>
+      <li>
+        <a href="filter.html"><p>PHEV</p></a>
+      </li>
+      <li>
+        <a href="filter.html"><p>PHEV</p></a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Elektrisch - uitgeklapt -->
+  <section class="mobile-zijkant zijkant-openen-3 zijkant-modellen">
+    <ul>
+      <li class="hamburger-model">
+        <p class="Elektrisch-terug"><</p>
+        <p class="hamburger-sluiten-3">X</p>
+      </li>
+      <li>
+        <a href="filter2.html"><p>Alle modellen</p></a>
+      </li>
+      <li>
+        <a href="filter2.html"><p>Sedan</p></a>
+      </li>
+      <li>
+        <a href="filter2.html"><p>Grand-coupe</p></a>
+      </li>
+      <li>
+        <a href="filter2.html"><p>SUV</p></a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Aanschaf en lease - uitgeklapt -->
+  <section class="mobile-zijkant zijkant-openen-4 zijkant-modellen">
+    <ul>
+      <li class="hamburger-model">
+        <p class="aanschaf-terug"><</p>
+        <p class="hamburger-sluiten-4">X</p>
+      </li>
+      <li>
+        <a href="filter.html"><p>Leasen</p></a>
+      </li>
+      <li>
+        <a href="filter.html"><p>Financiëren</p></a>
+      </li>
+      <li>
+        <a href="filter.html"><p>BMW-Services</p></a>
+      </li>
+      <li>
+        <a href="filter.html"><p>Dealers</p></a>
+      </li>
+      <li>
+        <a href="filter.html"><p>Direct beschikbare modellen</p></a>
+      </li>
+    </ul>
+  </section>
+
+
+    <!-- MAIN -->
+    <main class="home">
+
+
+      <article>
+        <section class="popup">
+          <div class="popup2">
+            <div>
+              <button id="popupButton">Feedback <img src="img/arrowright.webp" alt="Klik als je de feedback pagina wilt openen"></button>
+            </div>
+            <div>
+              <h4>We helpen u graag verder.</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cupiditate animi dicta eos, laborum maxime repudiandae atque non veniam consequatur asperiores nostrum r</p>
+              <div>
+                <img src="img/arrowright.webp" alt="Klik als je een live chat wilt starten">
+                <p>Start een live chat</p>
+              </div>
+              <div>
+                <img src="img/arrowright.webp" alt="Klik als je een email wilt opsturen">
+                <p>Stuur een e-mail</p>
+              </div>
+              <div>
+                <img src="img/arrowright.webp" alt="Klik als je wilt bellen">
+                <p>Bel of word teruggebeld</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+      
+      
+      
+
+      <article class="uitgelicht">
+        <section>
+        <h1>BMW M2 Coupé</h1>
+        <p>Rijdynamiek en designuitrustingen van de nieuwe BMW M2 Coupé.</p>
+        <button class="button-style2">
+          <span><a href="bmwM2.html">Bekijk nu</a></span>
+        </button>
+      </section>
+      </article>
+
+      <article class="bmw-info">
+        <section>
+          <img src="img/bmw-info1.webp" alt="een foto met een auto er op" />
+        </section>
+
+        <section>
+          <p>Experts in geweldig</p>
+          <h2>BMW SERVICES.</h2>
+          <p>
+            Bij geweldige rijprestaties en rijplezier hoort ook geweldig
+            onderhoud. Alleen de specialisten van BMW weten hoe ze uw BMW alle
+            aandacht kunnen geven die deze nodig heeft. Onderaan de streep kan
+            dat voordeliger uitpakken dan u misschien denkt.
+          </p>
+          <button class="button-style1">
+            <span><a href="filter.html">Ontdek meer</a></span>
+          </button>
+        </section>
+      </article>
+
+      <article class="uitgelicht-bmw">
+        <section>
+          <ul class="bmw-autos">
+            <li>
+                <img src="img/bmw1.webp" alt="Product1 de BMW M3 Sedan" />
+              <img src="img/BMW_black_M.webp" alt="Msports logo" />
+              <h3>BMW M3 Sedan</h3>
+              <h4>BENZINE</h4>
+              <p>vanaf € 68.425</p>
+            </li>
+            <li>
+              <img src="img/bmw2.webp" alt="Product2 de BMW Z4" />
+              <img src="img/BMW_black_M.webp" alt="Msports logo" />
+              <h3>BMW M2 COUPÉ</h3>
+              <h4>BENZINE</h4>
+              <p>vanaf $ 93.938</p>
+            </li>
+            <li>
+              <img src="img/bmw3.webp" alt="Product3 de BMW M440i" />
+              <img src="img/BMW_black_M.webp" alt="Msports logo" />
+              <h3>BMW Z4 M40i Roadster </h3>
+              <h4>BENZINE</h4>
+              <p>vanaf $ 114.938</p>
+            </li>
+            <li>
+              <img src="img/bmw3.webp" alt="Product3 de BMW M440i" />
+              <img src="img/BMW_black_M.webp" alt="Msports logo" />
+                <h3>BMW M440i xDrive</h3>
+                <h4>BENZINE</h4>
+                <p>vanaf € 145.845</p>
+            </li>
+          </ul>
+
+           <div class="auto-info-bmw auto-info-bmw1" style="display: none;">
+            <ul class="auto-info">
+              <img class="bmw3" src="img\bmw1-2.webp" alt="Product1 de BMW M3 Sedan" />
+              <li>
+                <img src="img/BMW_black_M.webp" alt="Msports logo" />
+                <h2>BMW M3 Sedan modellen</h2>
+                <h4>BENZINE</h4>
+                <p>vanaf $ 114.938</p>
+                <button class="button-style1">
+                  <span><a href="bmwM3.html">Bekijk nu</a></span>
+                </button>
+              </li>
+              <li>
+                <svg
+                  width="46"
+                  height="46"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4h-11c-.66 0-1.21.42-1.42 1.01L3 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99ZM6.85 6h10.29l1.08 3.11H5.77L6.85 6ZM19 16H5v-5h14v5Z"
+                  ></path>
+                  <path d="M7.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                  <path
+                    d="M16.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+                  ></path>
+                </svg>
+                <button class="button-style1">
+                  <span><a href="filter.html">Bekijk meer Msports</a></span>
+                </button>
+              </li>
+
+              <li>
+                <svg
+                  width="46"
+                  height="46"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4h-11c-.66 0-1.21.42-1.42 1.01L3 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99ZM6.85 6h10.29l1.08 3.11H5.77L6.85 6ZM19 16H5v-5h14v5Z"
+                  ></path>
+                  <path d="M7.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                  <path
+                    d="M16.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+                  ></path>
+                </svg>
+                <button class="button-style1">
+                  <span><a href="bmwM3.html">Configuratie</a></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="auto-info-bmw auto-info-bmw2"style="display: none;">
+            <ul class="auto-info">
+              <img class="bmw3" src="img/bmw2-2.webp" alt="Product2 de BMW Z4" />
+              <li>
+                <img src="img/BMW_black_M.webp" alt="Msports logo" />
+                <h2>BMW M2 Coupé</h2>
+                <h4>BENZINE</h4>
+                <p>vanaf € 68.425</p>
+                <button class="button-style1">
+                  <span><a href="bmwM2.html">Bekijk nu</a></span>
+                </button>
+              </li>
+              <li>
+                <svg
+                  width="46"
+                  height="46"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4h-11c-.66 0-1.21.42-1.42 1.01L3 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99ZM6.85 6h10.29l1.08 3.11H5.77L6.85 6ZM19 16H5v-5h14v5Z"
+                  ></path>
+                  <path d="M7.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                  <path
+                    d="M16.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+                  ></path>
+                </svg>
+                <button class="button-style1">
+                  <span><a href="filter.html">Bekijk meer Msports</a></span>
+                </button>
+              </li>
+
+              <li>
+                <svg
+                  width="46"
+                  height="46"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4h-11c-.66 0-1.21.42-1.42 1.01L3 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99ZM6.85 6h10.29l1.08 3.11H5.77L6.85 6ZM19 16H5v-5h14v5Z"
+                  ></path>
+                  <path d="M7.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                  <path
+                    d="M16.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+                  ></path>
+                </svg>
+                <button class="button-style1">
+                  <span><a href="bmwM2.html">Configuratie</a></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="auto-info-bmw auto-info-bmw3"style="display: none;">
+            <ul class="auto-info">
+              <img class="bmw3" src="img/bmw3-2.webp" alt="Product3 de BMW M440i" />
+              <li>
+                <img src="img/BMW_black_M.webp" alt="Msports logo" />
+                <h2>BMW Z4 M40i Roadster</h2>
+                <h4>BENZINE</h4>
+                <p>vanaf $ 93.938</p>
+                <button class="button-style1">
+                  <span><a href="bmwM2.html">Bekijk nu</a></span>
+                </button>
+              </li>
+              <li>
+                <svg
+                  width="46"
+                  height="46"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4h-11c-.66 0-1.21.42-1.42 1.01L3 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99ZM6.85 6h10.29l1.08 3.11H5.77L6.85 6ZM19 16H5v-5h14v5Z"
+                  ></path>
+                  <path d="M7.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                  <path
+                    d="M16.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+                  ></path>
+                </svg>
+                <button class="button-style1">
+                  <span><a href="filter2.html">Bekijk meer Msports</a></span>
+                </button>
+              </li>
+
+              <li>
+                <svg
+                  width="46"
+                  height="46"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4h-11c-.66 0-1.21.42-1.42 1.01L3 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99ZM6.85 6h10.29l1.08 3.11H5.77L6.85 6ZM19 16H5v-5h14v5Z"
+                  ></path>
+                  <path d="M7.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                  <path
+                    d="M16.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+                  ></path>
+                </svg>
+                <button class="button-style1">
+                  <span><a href="bmwM3.html">Configuratie</a></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="auto-info-bmw auto-info-bmw4"style="display: none;">
+            <ul class="auto-info">
+              <img class="bmw3" src="img/bmw4-2.webp" alt="Product4 BMW M2" />
+              <li>
+                <img src="img/BMW_black_M.webp" alt="Msports logo" />
+                <h2>BMW M2 Coupé</h2>
+                <h4>BENZINE</h4>
+                <p>vanaf € 145.845</p>
+                <button class="button-style1">
+                  <span><a href="bmwM3.html">Bekijk nu</a></span>
+                </button>
+              </li>
+              <li>
+                <svg
+                  width="46"
+                  height="46"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4h-11c-.66 0-1.21.42-1.42 1.01L3 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99ZM6.85 6h10.29l1.08 3.11H5.77L6.85 6ZM19 16H5v-5h14v5Z"
+                  ></path>
+                  <path d="M7.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                  <path
+                    d="M16.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+                  ></path>
+                </svg>
+                <button class="button-style1">
+                  <span><a href="filter2.html">Bekijk meer Msports</a></span>
+                </button>
+              </li>
+
+              <li>
+                <svg
+                  width="46"
+                  height="46"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4h-11c-.66 0-1.21.42-1.42 1.01L3 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99ZM6.85 6h10.29l1.08 3.11H5.77L6.85 6ZM19 16H5v-5h14v5Z"
+                  ></path>
+                  <path d="M7.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                  <path
+                    d="M16.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+                  ></path>
+                </svg>
+                <button class="button-style1">
+                  <span><a href="bmwM3.html">Configuratie</a></span>
+                </button>
+              </li>
+            </ul>
+          </div> 
+        </section>
+      </article>
+      <article class="merken">
+        <section>
+          <p>UW RIJPLEZIER</p>
+          <h2>Vind uw BMW.</h2>
+          <ul>
+            <li><img src="img/BMW_black_M.webp" alt="Msports logo">
+            <h3>M Sports</h3>
+            <p>Onze BMW M Sport-modellen worden vervaardigd met behulp van geavanceerde technologieën en hoogwaardige materialen, waardoor ze uitblinken in prestaties, betrouwbaarheid en duurzaamheid. Elk aspect van de auto is met uiterste precisie ontworpen en gebouwd om aan de hoogste normen te voldoen.</p>
+            <button class="button-style1"><span> <a href="filter.html">Bekijk nu</span></a></button>
+            </li>
+            <li><img src="img/BMW_i.webp" alt="Isports logo">
+            <h3>BMW I</h3>
+            <p>Bij ons vind je de perfecte Elektrische auto die voldoet aan al je behoeften en verwachtingen. Onze BMW i-modellen vertegenwoordigen de toekomst van duurzame mobiliteit, met geavanceerde Elektrische aandrijving en een indrukwekkend bereik.</p>
+            <button class="button-style1"><span> <a href="filter2.html">Bekijk nu</span></a></button>
+            </li>
+            <li><h2>X</h2>
+              <h3>BMW X</h3>
+              <p>Onze BMW X Elektrische modellen combineren een krachtige Elektrische aandrijving met het iconische design en vakmanschap waar BMW om bekend staat. Met indrukwekkende acceleratie, soepele rijervaring en een uitstekend bereik kun je zonder compromis genieten van een Elektrische rijervaring op lange afstanden.</p>
+              <button class="button-style1"><span> <a href="filter.html">Bekijk nu</span></a></button>
+            </li>
+            <li><img src="img/auto-icon-asortiment.webp" alt="Auto icon">
+              <h3>Verzending</h3>
+              <p>Wij zijn trots op onze snelle verzendservice. Zodra je de beslissing neemt om een BMW auto bij ons te kopen, zorgen wij ervoor dat je bestelling zo snel mogelijk wordt verwerkt en verzonden. Jouw tevredenheid en het snel kunnen genieten van jouw nieuwe BMW auto hebben voor ons de hoogste prioriteit.
+              </p>
+              <button class="button-style1"><span> <a href="filter2.html">Bekijk nu</span></a></button>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      
+      <article class="uitgelicht-product">
+        <img class="back-img" src="img/BMW_black.webp" alt="Grote BMW logo in het zwart">
+        <section>
+          <img class="uitgelicht-Mimg" src="img/BMW_black_M.webp" alt="Msports logo">
+          <h2>BMW M2 COUPÉ</h2>
+          <p>De nieuwe BMW M2 biedt het kenmerkende prestatieniveau van M, maar dan in een van zijn puurste vormen. Met zijn 338 kW (460 pk) sterke 6-cilinder-in-lijn benzinemotor, (optionele) handgeschakelde zesversnellingsbak en achterwielaandrijving belooft de tweede generatie van de compacte high-performance sportauto onvervalst rijplezier.</p>
+          <button class="button-style1"><span><a href="#">Bekijk nu</a></span></button>
+        </section>
+        <section>
+          <img src="img/main-background.webp" alt="Éen van de producten">
+        </section>
+      </article>
+
+
+
+
+      <article class="review-pagina">
+        <section>
+          <ul class="reviews">
+            <li><img src="img/review-img1.webp" alt="Review1">
+            <div>
+              <p class="date">03-10-2006</p>
+              <h3>Mucahid Alkan</h3>
+              <h4>BMW M3 Competition</h4>
+              <p class="text-review show">De eerste indruk was verbluffend. Het gestroomlijnde ontwerp, de glanzende lak en de iconische nieren in de grille maakten een onmiskenbaar statement. De aandacht voor detail en het vakmanschap waren duidelijk zichtbaar, zowel aan de buitenkant als in het interieur.</p>
+              <p class="more-info-trigger">Klik voor meer info</p>
+              <div class="stars">
+                <span class="material-symbols-outlined">grade</span>
+                <span class="material-symbols-outlined">grade</span>
+                <span class="material-symbols-outlined">grade</span>
+                <span class="material-symbols-outlined">grade</span>
+                <span class="material-symbols-outlined">grade</span>
+          </div>
+            </div>
+            </li>
+
+            <li><img src="img/review-img2.webp" alt="Review2">
+              <div>
+                <p class="date">03-10-2006</p>
+                <h3>Mucahid Alkan</h3>
+                <h4>BMW M3 Competition</h4>
+                <p class="text-review show">Bij het starten van de motor werd ik begroet door een krachtige en responsieve aandrijving. Het geluid van de motor gaf me kippenvel en ik kon niet wachten om de open weg op te gaan. De acceleratie was soepel en moeiteloos, en ik voelde me meteen verbonden met de weg.</p>
+                <p class="more-info-trigger">Klik voor meer info</p>
+                <div class="stars">
+                  <span class="material-symbols-outlined">grade</span>
+                  <span class="material-symbols-outlined">grade</span>
+                  <span class="material-symbols-outlined">grade</span>
+                  <span class="material-symbols-outlined">grade</span>
+                  <span class="material-symbols-outlined">grade</span>
+              </div>
+              </div>
+              </li>
+
+              <li><img src="img/review-img3.webp" alt="Review3">
+                <div>
+                  <p class="date">03-10-2006</p>
+                  <h3>Mucahid Alkan</h3>
+                  <h4>BMW M3 Competition</h4>
+                  <p class="text-review show">Het interieur van mijn BMW is een oase van luxe en comfort. De hoogwaardige materialen, de ergonomisch ontworpen stoelen en het intuïtieve infotainmentsysteem zorgen voor een verfijnde en plezierige rijervaring. Ik kan naadloos verbinding maken met mijn telefoon en genieten van mijn favoriete muziek terwijl ik onderweg ben.</p>
+                  <p class="more-info-trigger">Klik voor meer info</p>
+                  <div class="stars">
+                    <span class="material-symbols-outlined">grade</span>
+                    <span class="material-symbols-outlined">grade</span>
+                    <span class="material-symbols-outlined">grade</span>
+                    <span class="material-symbols-outlined">grade</span>
+                    <span class="material-symbols-outlined">grade</span>
+                  </div>
+                </div>
+                </li>
+
+                <li><img src="img/review-img4.webp" alt="Review4">
+                  <div>
+                    <p class="date">03-10-2006</p>
+                    <h3>Mucahid Alkan</h3>
+                    <h4>BMW M3 Competition</h4>
+                    <p class="text-review show">De veiligheidsvoorzieningen van mijn BMW zijn ook indrukwekkend. Het geavanceerde rijhulpsysteem houdt me alert en bewust van mijn omgeving, terwijl de actieve remassistentie me gemoedsrust geeft tijdens het rijden. Ik voel me vol vertrouwen en veilig, wetende dat ik kan vertrouwen op de technologieën die mijn BMW te bieden heeft.</p>
+                    <p class="more-info-trigger">Klik voor meer info</p>
+                    <div class="stars">
+                      <span class="material-symbols-outlined">grade</span>
+                      <span class="material-symbols-outlined">grade</span>
+                      <span class="material-symbols-outlined">grade</span>
+                      <span class="material-symbols-outlined">grade</span>
+                      <span class="material-symbols-outlined">grade</span>
+                    </div>
+                  </div>
+                  </li>
+
+                  <li><img src="img/review-img5.webp" alt="Review5">
+                    <div>
+                      <p class="date">03-10-2006</p>
+                      <h3>Mucahid Alkan</h3>
+                      <h4>BMW M3 Competition</h4>
+                      <p class="text-review show">Kortom, mijn ervaring met mijn nieuwe BMW is ronduit fantastisch. Elke keer dat ik achter het stuur stap, voel ik me verbonden met de weg en geniet ik van de opwinding die autorijden kan bieden. Ik kan met zekerheid zeggen dat ik de juiste keuze heb gemaakt met mijn BMW-aankoop en ik kijk uit naar vele jaren van buitengewone rijervaringen.</p>
+                      <p class="more-info-trigger">Klik voor meer info</p>
+                      <div class="stars">
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                      </div>
+                    </div>
+                    </li>
+
+                    <li><img src="img/review-img6.webp" alt="Review6">
+                      <div>
+                        <p class="date">03-10-2006</p>
+                        <h3>Mucahid Alkan</h3>
+                        <h4>BMW M3 Competition</h4>
+                        <p class="text-review show">Ik ben absoluut enthousiast over mijn recente aankoop van een BMW auto. Vanaf het moment dat ik plaatsnam achter het stuur, wist ik dat ik iets bijzonders had gekozen.</p>
+                        <p class="more-info-trigger">Klik voor meer info</p>
+                        <div class="stars">
+                          <span class="material-symbols-outlined">grade</span>
+                          <span class="material-symbols-outlined">grade</span>
+                          <span class="material-symbols-outlined">grade</span>
+                          <span class="material-symbols-outlined">grade</span>
+                          <span class="material-symbols-outlined">grade</span>
+                        </div>
+                      </div>
+                      </li>
+
+                      <li><img src="img/review-img7.webp" alt="Review7">
+                        <div>
+                          <p class="date">03-10-2006</p>
+                          <h3>Mucahid Alkan</h3>
+                          <h4>BMW M3 Competition</h4>
+                          <p class="text-review show">Ik ben onlangs de trotse eigenaar geworden van een BMW en ik kan met volle overtuiging zeggen dat deze auto echt een klasse apart is. Van het ontwerp tot de prestaties, BMW heeft me keer op keer verrast en verwonderd.</p>
+                          <p class="more-info-trigger">Klik voor meer info</p>
+                          <div class="stars">
+                            <span class="material-symbols-outlined">grade</span>
+                            <span class="material-symbols-outlined">grade</span>
+                            <span class="material-symbols-outlined">grade</span>
+                            <span class="material-symbols-outlined">grade</span>
+                            <span class="material-symbols-outlined">grade</span>
+                          </div>
+                        </div>
+                        </li>
+
+                        <li><img src="img/review-img8.webp" alt="Review8">
+                          <div>
+                            <p class="date">03-10-2006</p>
+                            <h3>Mucahid Alkan</h3>
+                            <h4>BMW M3 Competition</h4>
+                            <p class="text-review show">Het exterieurontwerp van mijn BMW is simpelweg adembenemend. Elke lijn en elk detail getuigt van elegantie en verfijning. Het is duidelijk dat er veel aandacht is besteed aan het creëren van een tijdloze en onderscheidende uitstraling.</p>
+                            <p class="more-info-trigger">Klik voor meer info</p>
+                            <div class="stars">
+                              <span class="material-symbols-outlined">grade</span>
+                              <span class="material-symbols-outlined">grade</span>
+                              <span class="material-symbols-outlined">grade</span>
+                              <span class="material-symbols-outlined">grade</span>
+                              <span class="material-symbols-outlined">grade</span>
+                            </div>
+                          </div>
+                          </li>
+                        </ul>
+          <div class="arrows">
+            <div class="arrow arrow-left">&#8249;</div>
+            <div class="arrow arrow-right">&#8250;</div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <section class="programmeur">
+        <h3>programmeur</h3>
+        <p>Ik ben Mucahid Alkan, een programmeur en designer die bekend is met HTML, CSS, JavaScript, WordPress en Shopify.</p>
+        <div>
+          <ul class="social">
+            <li><a href="https://www.instagram.com/mucah1d_alkan/?igshid=MzNlNGNkZWQ4Mg%3D%3D"><img src="img/insta.webp" alt="Instagram logo"><p>Instagram</p></a></li>
+            <li><a href="https://github.com/MFirtina61/Webshop-PER4.git"><img src="img/github.webp" alt="Github logo"><p>Github</p></a></li>
+            <li><a href="https://www.linkedin.com/in/mucahid-alkan-856254252/"><img src="img/linkdin.webp" alt="Linkdin logo"><p>LinkdIn</p></a></li>
+            <li><a href="https://www.bmw.nl/nl/index.html"><img src="img/bmw-logo-wit.webp" alt="BMW website"><p>BMW Website</p></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="nav-footer">
+        <ul>
+        <li><h4>Aanschaf & Leasen</h4></li>
+        <li><a href="filter.html"><p>Leasen</p></a></li>
+        <li><a href="filter.html"><p>Financiëren</p></a></li>
+        <li><a href="filter.html"><p>BMW Services</p></a></li>
+        <li><a href="filter.html"><p>Dealers</p></a></li>
+        <li><a href="filter.html"><p>Direct beschikbare modellen</p></a></li>
+
+      </ul>
+      <ul>
+        <li><h4>Modellen</h4></li>
+        <li><a href="filter.html"><p>Alle modellen</p></a></li>
+        <li><a href="filter.html"><p>X-model</p></a></li>
+        <li><a href="filter.html"><p>M-model</p></a></li>
+        <li><a href="filter.html"><p>PHEV</p></a></li>
+        <li><a href="filter.html"><p>SUV</p></a></li>
+      </ul>
+      <ul>
+        <li><h4>Elektrisch	</h4></li>
+        <li><a href="filter2.html"><p>Alle modellen</p></a></li>
+        <li><a href="filter2.html"><p>sedan</p></a></li>
+        <li><a href="filter2.html"><p>Grand coupe</p></a></li>
+        <li><a href="filter2.html"><p>SUV</p></a></li>
+      </ul>
+      </section>
+    </footer>
+  </body>
+</html>
